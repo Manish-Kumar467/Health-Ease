@@ -30,9 +30,26 @@
             font-family: "Nerko One", cursive;
             font-size: 50px;
         }
+        .btn-google {
+            background-color: #ffffff;
+            border-color: #dddddd;
+            color: #444444;
+            text-align: center;
+        }
+        .btn-google img {
+            height: 16px;
+            margin-right: 8px;
+        }
+        .top-right-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
     </style>
 </head>
 <body class="d-flex align-items-center py-4 bg-light background-color">
+    <!-- Button to go to the login page -->
+    <a href="/login" class="btn btn-outline-primary top-right-button">Login  </a>
     <div class="container d-flex justify-content-center">
         <main class="form-signin form-container">
             
@@ -61,10 +78,26 @@
                 <button class="btn btn-primary w-100 py-2" type="submit">Register</button>
             </form>
 
-            <form action="/auth/google" method="GET">
+            <!-- <form action="/auth/google" method="GET">
                 <button class="btn btn-outline-dark w-100 py-2 mt-3" type="submit">
                     <img src="https://img.icons8.com/color/16/000000/google-logo.png" class="me-2" alt="Google Logo">
                     Sign Up through Google
+                </button>
+            </form> -->
+            <!-- <div class="col-sm-4">
+                <div class="card social-block">
+                  <div class="card-body">
+                    <a class="btn btn-block" href="/auth/google" role="button">
+                      <i class="fab fa-google"></i>
+                      Sign Up with Google
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              <form action="/auth/google" method="GET">
+                <button class="btn btn-google w-100 py-2 mt-3" type="submit">
+                    <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Logo">
+                    Sign Up with Google
                 </button>
             </form>
 
